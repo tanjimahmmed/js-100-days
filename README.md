@@ -1,2 +1,2 @@
-# js-100-days
+# JS-100-days
 app-js
