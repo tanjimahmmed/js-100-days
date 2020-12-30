@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::selection {
+    display: none;
+}
+
+.gift_card_image {
+    height: 250px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.gift_card {
+    max-width: 450px;
+}
+
+.gift_card_detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.wrapper {
+    box-shadow: 0 6px 11px #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn {
+    border: none;
+    background: #00adff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    transition: 0.3s ease-in;
+}
+
+.btn:hover {
+    background: #00adffb5;
+}
+
+.gift_card_detail::before {
+    position: absolute;
+    content: '';
+    top: -9px;
+    left: -2px;
+    right: 0;
+    height: 20px;
+    background: white;
+    transform: rotate(2deg);
+}
+
+.gift_card_label {
+    font-size: 20px;
+    color: #00adff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.gift_card_code input[type=text] {
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
