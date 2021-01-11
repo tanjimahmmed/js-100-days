@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form validation with popup message</title>
+</head>
+<body>
+<!-- form area -->
+<section class="form_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                <div class="form_container">
+                    <div class="header_form">
+                        <h3>Submit a tool</h3>
+                    </div>
+                    <form class="form_section">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <label for="name">Name</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="web">WebSite</label>
+                                <input type="url" id="url">
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject">
+                            </div>
+                            <div class="col-xl-12">
+                                <input type="submit" name="Submit" id="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- form area end -->
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

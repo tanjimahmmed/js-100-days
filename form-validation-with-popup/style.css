@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ebf3fb;
+  font-family: 'Lato', sans-serif;
+}
+section.form_area {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.header_form h3 {
+    font-weight: 500;
+}
+.form_container {
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 6px 4px 20px 13px #b4b4c729;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.header_form {
+  background: #24245c;
+  color: #fff;
+  padding: 5rem 3rem;
+  padding-bottom: 4rem;
+}
+
+.form_section {
+  padding: 3rem;
+  text-align: left;
+}
+
+.form_section input[type="text"],
+.form_section input[type="url"] {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #7c7c9d47;
+  outline: none;
+  color: #24245c;
+  font-size: 22px;
+  font-weight: 400;
+  height: 45px;
+}
+
+.form_section label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #24245C;
+}
+
+.form_section input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background: #24245c;
+  color: #fff;
+  padding: 18px 65px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 1px 6px 10px #24245c66;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.form_section input:hover[type="submit"] {
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 1199px) {
+    .form_container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .form_container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .form_container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
