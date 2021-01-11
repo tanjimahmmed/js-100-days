@@ -78,7 +78,9 @@ section.form_area {
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
-
+.form_section input:focus[type="submit"] {
+    outline: none;
+}
 .form_section input:hover[type="submit"] {
   box-shadow: none;
 }
