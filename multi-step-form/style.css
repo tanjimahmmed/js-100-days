@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+.form_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+/* progress bar css  */
+.section_form_area .progress_bar {
+  display: flex;
+  margin: 40px 0;
+}
+
+/* form css */
+.section_form_area {
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 35px 10px 35px;
+}
+
+.section_form_area header {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+.section_form_area .form_outer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form_outer form {
+  display: flex;
+  width: 400%;
+}
+
+.form_outer form .page {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  -moz-transition: margin-left 0.3s ease-in-out;
+  -ms-transition: margin-left 0.3s ease-in-out;
+  -o-transition: margin-left 0.3s ease-in-out;
+}
+
+.form_outer form .page .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.form_outer form .page .field {
+  height: 45px;
+  width: 330px;
+  margin: 45px 0;
+  position: relative;
+  display: flex;
+}
+
+.form_outer form .page .field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  outline: none;
+}
+
+.form_outer form .page .field label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+.form_outer form .page .field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  margin-top: -20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: #f39f86;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  outline: none;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+}
+
+.form_outer form .page .field button:hover {
+  background: #333;
+}
+
+.form_outer form .page .btns button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+.form_outer form .page .btns button.next {
+  margin-left: 3px;
+}
+
+.form_outer form .page .btns button {
+  margin-top: -20px !important;
+}
+
+form .page .field select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.section_form_area .progress_bar .step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.progress_bar .step p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress_bar .step p.active {
+  color: #f4ae81;
+}
+.progress_bar .step .bullet {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+}
+.progress_bar .step .bullet.active {
+  border-color: #f4ae81;
+  background: #f4ae81;
+  color: #fff;
+}
+.progress_bar .step .bullet span {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress_bar .step .bullet.active span {
+  display: none;
+}
+.progress_bar .step .check.active {
+  display: block;
+  color: #fff;
+}
+/* .progress_bar .step .check {
+  display: none;
+} */
+
+.progress_bar .step .bullet:before, .progress_bar .step .bullet:after {
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  background: #333;
+  height: 3px;
+  width: 44px;
+}
+
+.progress_bar .step:last-child .bullet:before, .progress_bar .step:last-child .bullet:after {
+  display: none;
+}
+
+.progress_bar .step .bullet.active:after {
+  background: #f4ae81;
+  animation: animate 0.3s linear forwards;
+  transform-origin: left;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  -webkit-animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+}
+
+.progress_bar .step .check {
+  position: absolute;
+  left: 50%;
+  top: 72%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  display: none;
+}
+
