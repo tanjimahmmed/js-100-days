@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+.main_div {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_div h1 {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+h1 {
+    display: block;
+}
+img {
+    max-width: 100%;
+}
+.inner_div img {
+    max-width: 100%;
+    width: 40rem;
+    height: 60rem;
+    object-fit: cover;
+    box-shadow: 0 1rem 2rem 0.8rem rgba(0, 0, 0, 0.8);
+    position: relative;
+    cursor: pointer;
+}
+.inner_div .fas {
+    position: absolute;
+    color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: heartGrow 0.8s linear;
+    -webkit-animation: heartGrow 0.8s linear;
+}
+
+@keyframes heartGrow {
+    100% {
+        transform: scale(8);
+        -webkit-transform: scale(8);
+        -moz-transform: scale(8);
+        -ms-transform: scale(8);
+        -o-transform: scale(8);
+        opacity: 0;
+}
+}
+.clickCount {
+    color: #ee5253;
+}
