@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #00c4ff;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.container .joke {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: orange;
+    border: none;
+    font-size: 15px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 10px #bdbdbd;
+    transition: 0.3s;
+    outline: none;
+}
+
+.btn:hover {
+    box-shadow: 0 2px 5px #bdbdbd;
+}
